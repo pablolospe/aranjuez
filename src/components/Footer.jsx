@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-6">
                     <a href="#" className="flex items-center hover:text-white">
                         <Phone className="h-5 w-5 mr-2" />
-                        <span>+54 11 4444-5555</span>
+                        <span>(0348) 842-3591</span>
                     </a>
                     <a href="#" className="hover:text-white">
                         <Instagram className="h-6 w-6" />

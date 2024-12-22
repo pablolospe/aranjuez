@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link href="/eventos">
               <span className="block px-4 py-2 hover:bg-stone-200">Eventos</span>
             </Link>
-            <a href="tel:+582129931326" className="block px-4 py-2 hover:bg-stone-200">
+            <a href="tel:+03488423591" className="block px-4 py-2 hover:bg-stone-200">
               Contacto
             </a>
           </div>
