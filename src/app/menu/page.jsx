@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css'
 
 function MenuPage() {
   return (
-    <div className="menu-page p-8 bg-gray-100">
+    <div className="menu-page p-8 bg-gray-100 lg:px-80">
       <h1 className="menu-title text-4xl font-bold mb-8 text-center">Menú de Bodegón</h1>
       <div className="menu-section mb-8">
         <h2 className="menu-section-title text-2xl font-semibold mb-4">Minutas</h2>
