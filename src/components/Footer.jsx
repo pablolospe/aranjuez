@@ -1,5 +1,4 @@
-
-import React from 'react';
+import { Menu, Phone, Instagram } from 'lucide-react';
 
 const Footer = () => {
     return (
