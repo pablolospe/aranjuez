@@ -1,29 +1,27 @@
+
 import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-yellow-400 text-gray-800 p-8 text-center">
-            <div className="max-w-6xl mx-auto">
-                <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-orange-600"><span>Aranjuez</span> Music</h1>
-                    <p className="mt-4">
-                        Aranjuez Music is a platform dedicated to bringing you the best music from around the world.
-                    </p>
+        <footer className="bg-stone-800 text-stone-200 px-4 py-6">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div className="text-center md:text-left">
+                    <h3 className="font-serif text-xl mb-2">Aranjuez</h3>
+                    <p className="text-stone-400">Country Club - Buenos Aires, Argentina</p>
                 </div>
-                <div className="mb-8">
-                    <div className="mb-4">
-                        <span className="block text-lg"><i className="fas fa-phone"></i> &nbsp; +123-456-789</span>
-                        <span className="block text-lg"><i className="fas fa-envelope"></i> &nbsp; info@aranjuezmusic.com</span>
-                    </div>
-                    <div className="flex justify-center space-x-4">
-                        <a href="#" className="text-gray-800 hover:text-orange-600"><i className="fab fa-facebook"></i></a>
-                        <a href="#" className="text-gray-800 hover:text-orange-600"><i className="fab fa-twitter"></i></a>
-                        <a href="#" className="text-gray-800 hover:text-orange-600"><i className="fab fa-instagram"></i></a>
-                    </div>
+                <div className="flex items-center space-x-6">
+                    <a href="#" className="flex items-center hover:text-white">
+                        <Phone className="h-5 w-5 mr-2" />
+                        <span>+54 11 4444-5555</span>
+                    </a>
+                    <a href="#" className="hover:text-white">
+                        <Instagram className="h-6 w-6" />
+                    </a>
                 </div>
             </div>
         </footer>
     );
+
 };
 
 export default Footer;
