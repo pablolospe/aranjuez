@@ -13,7 +13,7 @@ const Footer = () => {
                         <Phone className="h-5 w-5 mr-2" />
                         <span>(0348) 842-3591</span>
                     </a>
-                    <a href="#" className="hover:text-white">
+                    <a href="https://www.instagram.com/pablolospe" className="hover:text-white">
                         <Instagram className="h-6 w-6" />
                     </a>
                 </div>
