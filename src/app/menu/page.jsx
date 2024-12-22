@@ -1,5 +1,10 @@
-import React from 'react'
 import 'tailwindcss/tailwind.css'
+
+export const metadata = {
+  title: 'Menú | Aranjuez',
+  description: 'Menú | Aranjuez',
+ };
+ 
 
 function MenuPage() {
   return (

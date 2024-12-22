@@ -1,6 +1,10 @@
-import React from 'react';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Eventos | Aranjuez',
+  description: 'Eventos | Aranjuez',
+ };
+ 
 function EventosPage() {
   return (
     <div className="relative h-full">
