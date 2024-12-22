@@ -24,14 +24,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col overflow-hidden bg-stone-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col bg-stone-50`}
       >
-        <main className="flex flex-col max-h-screen">
+        <main className="flex-grow overflow-auto">
           <Navbar />
           {children}
-          <Footer />
           <WhatsappComponent />
         </main>
+        <Footer className="flex-shrink-0" />
       </body>
     </html>
   );
