@@ -7,7 +7,7 @@ const MainContent = () => {
         <Image
           src="/aranjuez.jpg"
           alt="Restaurante Aranjuez"
-          height={1080}
+          height={560}
           width={1920}
           priority
           className="w-full h-full object-cover"

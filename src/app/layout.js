@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col bg-stone-50`}
       >
+        <Navbar />
         <main className="flex-grow overflow-auto">
-          <Navbar />
           {children}
           <WhatsappComponent />
         </main>
