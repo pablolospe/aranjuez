@@ -18,13 +18,14 @@ function ReservasPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // alert('Reserva registrada');
     const mailtoLink = `mailto:yosoypxl@gmail.com?subject=Reserva&body=Nombre: ${formData.name}%0AEmail: ${formData.email}%0AFecha: ${formData.date}%0AHora: ${formData.time}%0ANúmero de personas: ${formData.guests}`;
     window.location.href = mailtoLink;
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="flex items-start pt-4 justify-center h-screen bg-gray-100">
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6">Reservar una mesa</h2>
         <div className="mb-4">
           <label className="block text-gray-700">Nombre</label>
@@ -48,28 +49,32 @@ function ReservasPage() {
             required
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Fecha</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded"
-            required
-          />
+
+        <div className='flex w-full gap-4'>
+          <div className="mb-4 w-full">
+            <label className="block text-gray-700">Fecha</label>
+            <input
+              type="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4 w-full">
+            <label className="block text-gray-700">Hora</label>
+            <input
+              type="time"
+              name="time"
+              value={formData.time}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+              required
+            />
+          </div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Hora</label>
-          <input
-            type="time"
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded"
-            required
-          />
-        </div>
+
         <div className="mb-4">
           <label className="block text-gray-700">Número de personas</label>
           <input
