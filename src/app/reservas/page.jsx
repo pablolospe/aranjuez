@@ -24,7 +24,7 @@ function ReservasPage() {
   };
 
   return (
-    <div className="flex items-start pt-4 justify-center h-screen bg-gray-100">
+    <div className="flex items-start pt-4 justify-center h-screen bg-gray-100 px-4">
       <form onSubmit={handleSubmit} className="w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6">Reservar una mesa</h2>
         <div className="mb-4">
